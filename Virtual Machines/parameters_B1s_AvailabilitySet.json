@@ -6,7 +6,7 @@
             "value": "southeastasia"
         },
         "networkInterfaceName": {
-            "value": "webapp-front-1811"
+            "value": "webapp-front-2811"
         },
         "networkSecurityGroupName": {
             "value": "WebApp-Front-1-nsg"
@@ -35,7 +35,7 @@
             "value": "/subscriptions/7a550bdd-503a-443a-9be3-1f406eb1dcb3/resourceGroups/EnterpriseWebApp/providers/Microsoft.Network/virtualNetworks/WebApp-Prod-vnet"
         },
         "publicIpAddressName": {
-            "value": "WebApp-Front-1-ip"
+            "value": "WebApp-Front-2-ip"
         },
         "publicIpAddressType": {
             "value": "Static"
@@ -44,7 +44,7 @@
             "value": "Standard"
         },
         "virtualMachineName": {
-            "value": "WebApp-Front-1"
+            "value": "WebApp-Front-2"
         },
         "virtualMachineRG": {
             "value": "EnterpriseWebApp"
@@ -56,10 +56,10 @@
             "value": "Standard_B1s"
         },
         "adminUsername": {
-            "value": "VM1_admin"
+            "value": "VM2_admin"
         },
         "adminPassword": {
-            "value": null
+            "value": "VM2_admin123"
         },
         "availabilitySetName": {
             "value": "WebApp-Front-Prod"
