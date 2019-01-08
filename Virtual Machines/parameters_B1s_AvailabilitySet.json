@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southeastasia"
+        },
+        "networkInterfaceName": {
+            "value": "webapp-front-1811"
+        },
+        "networkSecurityGroupName": {
+            "value": "WebApp-Front-1-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "RDP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "WebApp-Prod-Front-subnet"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/7a550bdd-503a-443a-9be3-1f406eb1dcb3/resourceGroups/EnterpriseWebApp/providers/Microsoft.Network/virtualNetworks/WebApp-Prod-vnet"
+        },
+        "publicIpAddressName": {
+            "value": "WebApp-Front-1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "virtualMachineName": {
+            "value": "WebApp-Front-1"
+        },
+        "virtualMachineRG": {
+            "value": "EnterpriseWebApp"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "VM1_admin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "availabilitySetName": {
+            "value": "WebApp-Front-Prod"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "17:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "AUS Eastern Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "josh.hunter@sofm.com.au"
+        }
+    }
+}
